@@ -2,6 +2,8 @@ package com.example.myapp.di
 
 import android.app.Application
 import android.content.Context
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
 import androidx.room.Room
 import com.example.myapp.common.dispatcher.DefaultDispatcherProvider
 import com.example.myapp.common.dispatcher.DispatcherProvider
@@ -12,9 +14,11 @@ import com.example.myapp.common.networkhelper.NetworkHelperImpl
 import com.example.myapp.data.database.AppDatabaseService
 import com.example.myapp.data.database.DatabaseService
 import com.example.myapp.data.database.MainDatabase
+import com.example.myapp.data.model.MainData
 import com.example.myapp.data.network.ApiInterface
 import com.example.myapp.data.network.ApiKeyInterceptor
 import com.example.myapp.data.network.FakeNetworkService
+import com.example.myapp.ui.paging.MainPagingSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -85,6 +89,20 @@ class ApplicationModule {
     @Singleton
     fun provideLogger(): Logger {
         return AppLogger()
+    }
+
+    @Provides
+    @Singleton
+    fun providePager(
+        mainPagingSource: MainPagingSource
+    ): Pager<Int, MainData> {
+        return Pager(
+            config = PagingConfig(
+                pageSize = 15
+            )
+        ) {
+            mainPagingSource
+        }
     }
 
     @DbName

@@ -4,68 +4,133 @@
   "articles": [
     {
       "source": {
-        "id": null,
-        "name": "The Indian Express"
+        "id": "the-times-of-india",
+        "name": "The Times of India"
       },
-      "author": "The Indian Express",
-      "title": "India vs Bangladesh 4th women’s T20I Live Score: IND 41/2 (5 ov); Hemalatha falls after entertaining cameo - The Indian Express",
-      "description": null,
-      "url": "https://indianexpress.com/article/sports/cricket/ind-vs-ban-live-score-4th-womens-t20-india-vs-bangladesh-scorecard-updates-9311038/",
-      "urlToImage": null,
-      "publishedAt": "2024-05-06T10:39:00Z",
-      "content": null
+      "author": "Shifa Khan",
+      "title": "10 health benefits of consuming honey in summers - The Times of India",
+      "description": "Honey is not just a delicious sweetener, but a versatile natural remedy with numerous health benefits, especially in summer.",
+      "url": "https://timesofindia.indiatimes.com/life-style/health-fitness/web-stories/10-health-benefits-of-consuming-honey-in-summers/photostory/109887239.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-109887288,imgsize-1394471,width-900,height-1200,resizemode-6/109887288.jpg",
+      "publishedAt": "2024-05-07T06:30:00Z",
+      "content": "When you eat honey, it raises your insulin levels a little, allowing tryptophan, an amino acid, to enter your brain more easily. Tryptophan changes into serotonin, and then into melatonin, which help… [+141 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "The Indian Express"
+        "name": "Firstpost"
       },
-      "author": "The Indian Express",
-      "title": "Israel begins evacuating part of Rafah, Hamas decries ‘dangerous escalation’ - The Indian Express",
-      "description": null,
-      "url": "https://indianexpress.com/article/world/israel-hamas-war-palestine-evacuate-rafah-9310725/",
-      "urlToImage": null,
-      "publishedAt": "2024-05-06T10:03:57Z",
-      "content": null
+      "author": "Prakriti Jash, Madhur Sharma",
+      "title": "Lok Sabha Elections 2024 Phase 3 LIVE: 25.41% voter turnout till 11am; West Bengal recorded highest at 32.82% turnout - Firstpost",
+      "description": "Lok Sabha Elections 2024 Phase 3 LIVE Updates: The Phase 3 polling underway in 93 seats across 11 states and a UT has recorded 25.41% voter turnout till 11 am, the Election Commission of India said",
+      "url": "https://www.firstpost.com/india/phase-3-live-voter-turnout-lok-sabha-elections-2024-may-7-bjp-congress-polls-13767859.html",
+      "urlToImage": "https://images.firstpost.com/uploads/2024/04/2024-04-19T033211Z_570193638_RC2D97A3ND3C_RTRMADP_3_INDIA-ELECTION-1-2024-04-e148fabc2b9733d5f8d535d078fe61b2.jpg?im=FitAndFill=(1200,675)",
+      "publishedAt": "2024-05-07T06:23:39Z",
+      "content": "Voting for the third phase of the Lok Sabha elections, which include 12 states and a union territory, is underway.\r\nElections are being held in 93 constituencies. Gujarat’s Surat seat has already bee… [+1226 chars]"
     },
     {
       "source": {
-        "id": null,
-        "name": "NDTV News"
+        "id": "google-news",
+        "name": "Google News"
       },
       "author": null,
-      "title": "\"Will Remove 50% Cap, Give As Much Reservation As Needed\": Rahul Gandhi - NDTV",
-      "description": "The Congress will remove the Supreme Court-mandated 50 per cent cap on caste-based reservation and increase quota benefits for people from Dalit, backward and tribal communities, Congress leader Rahul Gandhi said today.",
-      "url": "https://www.ndtv.com/india-news/rahul-gandhi-2024-lok-sabha-election-will-remove-50-cap-give-as-much-reservation-as-needed-rahul-gandhi-5600491",
-      "urlToImage": "https://c.ndtvimg.com/2024-05/ifu02pt_rahul-gandhi-ratlam_625x300_06_May_24.jpg?im=FitAndFill,algorithm=dnn,width=1200,height=738?ver-20240430.08",
-      "publishedAt": "2024-05-06T10:01:40Z",
-      "content": "Rahul Gandhi today addressed a poll rally at Ratlam in Madhya Pradesh today\r\nRatlam (MP): The Congress will remove the Supreme Court-mandated 50 per cent cap on caste-based reservation and increase q… [+2627 chars]"
+      "title": "Truth Behind MS Dhoni's No. 9 Decision Out, Harbhajan Singh, Irfan Pathan Made To Eat Words - NDTV Sports",
+      "description": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "url": "https://news.google.com/rss/articles/CBMigAFodHRwczovL3Nwb3J0cy5uZHR2LmNvbS9pcGwtMjAyNC90cnV0aC1iZWhpbmQtbXMtZGhvbmlzLW5vLTktZGVjaXNpb24tb3V0LWhhcmJoYWphbi1zaW5naC1pcmZhbi1wYXRoYW4tbWFkZS10by1lYXQtd29yZHMtNTYwNjg0MtIBhgFodHRwczovL3Nwb3J0cy5uZHR2LmNvbS9pcGwtMjAyNC90cnV0aC1iZWhpbmQtbXMtZGhvbmlzLW5vLTktZGVjaXNpb24tb3V0LWhhcmJoYWphbi1zaW5naC1pcmZhbi1wYXRoYW4tbWFkZS10by1lYXQtd29yZHMtNTYwNjg0Mi9hbXAvMQ",
+      "urlToImage": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "publishedAt": "2024-05-07T06:14:20Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "Affiliate Desk",
+      "title": "Amazon Sale 2024 Live: Check out latest deals and offers on best-selling products today! - Hindustan Times",
+      "description": "Amazon Great Summer Sale 2024 Live Today: Explore Amazon’s various offers on electronics, gadgets, home and kitchen appliances, and large appliances. From discounted products to markdowns, find exclusive deals and savings every day across various product cate…",
+      "url": "https://www.hindustantimes.com/technology/amazon-deals-live-updates-check-latest-deals-and-offers-today-07may2024-101715056200807.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/05/02/550x309/Sale_is_live_1714631742083_1714632147240.png",
+      "publishedAt": "2024-05-07T05:54:00Z",
+      "content": "Amazon Great Summer Sale 2024 Live Updates: Amazon Indias annual summer sale is here. You can find interesting offers and deals on an entire spectrum of products, ranging from electronics, gadgets, h… [+3677 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Business Today"
+      },
+      "author": "Business Today Desk",
+      "title": "‘Hardest decision’: Ananya Birla announces decision to quit singing to focus on business - Business Today",
+      "description": "After this announcement, many celebrities and friends expressed shock at Ananya’s decision to quit and wished her luck for her future endeavours.",
+      "url": "https://www.businesstoday.in/latest/trends/story/hardest-decision-ananya-birla-announces-decision-to-quit-singing-to-focus-on-business-428563-2024-05-07",
+      "urlToImage": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202405/6639bff0a7a70-ananya-birla-music-072029195-16x9.jpg",
+      "publishedAt": "2024-05-07T05:47:07Z",
+      "content": "Anayashree Birla, an Indian singer, songwriter, and entrepreneur, recently took to social media to announce her decision to discontinue her career as a musician and singer so that she can concentrate… [+1499 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "Parmita Uniyal",
+      "title": "World Asthma Day 2024: Can heatwave trigger asthma attacks? Know symptoms, tips to manage - Hindustan Times",
+      "description": "High temperatures and humidity levels can cause swelling and narrowing of bronchial tubes. This can cause worrying symptoms like wheezing, shortness of breath. | Health",
+      "url": "https://www.hindustantimes.com/lifestyle/health/world-asthma-day-2024-can-heatwave-trigger-asthma-attacks-know-symptoms-tips-to-manage-101715059492302.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/05/07/1600x900/heatwave_asthma_1715059681928_1715059695375.jpg",
+      "publishedAt": "2024-05-07T05:33:48Z",
+      "content": "The ongoing heatwave conditions in the country can spell bad news for asthma patients who could experience exacerbation in their symptoms. Extreme weather including severe heat is linked with irritat… [+3952 chars]"
     },
     {
       "source": {
         "id": null,
         "name": "News18"
       },
-      "author": "Aditi Ray Chowdhury",
-      "title": "'Stunts, Not Attacks': Ex-Punjab CM Channi Links Poonch IAF Convoy Ambush To LS Polls; BJP Hits Back - News18",
-      "description": "Replying to a question on the attack on the Indian Air Force’s convoy in Jammu and Kashmir’s Poonch, Channi said, ”’Yeh stuntbaazi ho rahi hai, hamle nahi ho rahe’ (These are all stunts, not attacks)\"",
-      "url": "https://www.news18.com/politics/ex-punjab-cm-channi-calls-attack-on-iafs-convoy-stunt-links-it-to-ls-polls-8879102.html",
-      "urlToImage": "https://images.news18.com/ibnlive/uploads/2024/05/mixcollage-06-may-2024-07-29-am-2000-2024-05-f35ebbddc2a6f9afe1d084808d742a72-16x9.jpg?impolicy=website&width=1200&height=675",
-      "publishedAt": "2024-05-06T09:38:34Z",
-      "content": "Congress leader Charanjit Singh Channi on Sunday called the Poonch terror attack in which an IAF soldier was killed and four were injured, a stunt meant to make the BJP win the Lok Sabha elections.\r\n… [+3120 chars]"
+      "author": null,
+      "title": "Why Are Cancer Cases Rising In India? Preventive Measures, Lifestyle Choices Experts Recommend - News18",
+      "description": "According to the WHO, a 30-40% cancer burden can be attributed to lifestyle risk factors such as tobacco smoking, alcohol consumption, a diet low in fruit and vegetables, overweight and obesity, and physical inactivity. Experts encourage individuals to go for…",
+      "url": "https://www.news18.com/explainers/why-are-cancer-cases-rising-in-india-preventive-measures-lifestyle-choices-experts-recommend-8880681.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2024/02/img-25-2024-02-60a8366dae8d072495bbb344b7efc946-16x9.jpg?impolicy=website&width=1200&height=675",
+      "publishedAt": "2024-05-07T05:31:00Z",
+      "content": "The word cancer is common, but living with the disease is challenging and daunting. India is seeing the cases soar every year, with the latest research by a renowned hospital pointing to overall decl… [+6443 chars]"
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TOI Business Desk",
+      "title": "Stock market today: BSE Sensex opens in green, up 50 points; Nifty50 above 22,450 - The Times of India",
+      "description": "India Business News: Stock market today: The Indian market has been underperforming recently, despite positive global cues. While the Dow has been on an upward trend for f",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-today-bse-sensex-nifty50-may-7-2024-dalal-street-indian-equities-global-markets-us-federal-reserve/articleshow/109901202.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-109901700,width-1070,height-580,imgsize-132984,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2024-05-07T05:21:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TOI Tech Desk",
+      "title": "Apple Let loose event 2024: New iPads, Magic Keyboard, Apple Pencil and everything else that’s expected - The Times of India",
+      "description": "MOBILES & TABLETS News: Apple Let Loose event to unveil new iPad Pro models with OLED displays, slimmer design, and M4 chip. Magic Keyboard update includes an aluminium base.",
+      "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/apple-let-loose-event-2024-new-ipads-magic-keyboard-apple-pencil-and-everything-else-thats-expected/articleshow/109905318.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-109905318,width-1070,height-580,imgsize-13632,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2024-05-07T05:04:00Z",
+      "content": null
     },
     {
       "source": {
         "id": null,
-        "name": "Bar & Bench - Indian Legal News"
+        "name": "Hindustan Times"
       },
-      "author": "Neha Joshi",
-      "title": "Bombay High Court grants two months interim medical bail to Naresh Goyal in ED case - Bar & Bench - Indian Legal News",
-      "description": "The Bombay High Court on Monday granted two months interim medical bail to Jet Airways founder Naresh Goyal in a money laundering case registered against him by",
-      "url": "https://www.barandbench.com/news/bombay-high-court-grants-two-months-interim-medical-bail-naresh-goyal-ed-case",
-      "urlToImage": "https://media.assettype.com/barandbench%2F2023-02%2F21983c85-5bbd-4113-8e13-3eb1f93d50ab%2F04.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-      "publishedAt": "2024-05-06T09:28:21Z",
-      "content": "Senior Advocates Harish Salve and Abad Ponda appeared for Goyal along with team from Naik Naik &amp; Co including Managing Partner Ameet Naik and Partner Abhishek Kale.\r\nHe argued that Goyal was seek… [+657 chars]"
+      "author": "HT Entertainment Desk",
+      "title": "Fans notice how international paparazzi screamed, chanted Alia Bhatt's name at Met Gala 2024. Watch - Hindustan Times",
+      "description": "Alia Bhatt was a major name on the Met Gala 2024 red carpet on Monday night. Did you notice this special moment from her walk up the MET stairs? | Bollywood",
+      "url": "https://www.hindustantimes.com/entertainment/bollywood/alia-bhatt-at-met-gala-2024-paparazzi-scream-her-name-on-red-carpet-101715055456149.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/05/07/1600x900/alia_bhatt_met_gala_1715055488158_1715055488329.jpg",
+      "publishedAt": "2024-05-07T04:33:39Z",
+      "content": "Alia Bhatt made her second appearance at the MET Gala this year on Monday evening. The Bollywood star was the biggest name from India to attend the gala, and chose to wear a saree designed by her fav… [+3032 chars]"
     },
     {
       "source": {
@@ -73,129 +138,64 @@
         "name": "123telugu.com"
       },
       "author": null,
-      "title": "Thug Life: Kamal Haasan, Mani Ratnam shoot in the capital city - 123telugu",
+      "title": "20 years of Arya: Allu Arjun goes nostalgic - 123telugu",
       "description": "Telugu cinema news, Movie reviews, OTT News, OTT Release dates, Latest Movie reviews in Telugu, telugu movie reviews, Box office collections",
-      "url": "https://www.123telugu.com/mnews/thug-life-kamal-haasan-mani-ratnam-shoot-in-the-capital-city.html",
+      "url": "https://www.123telugu.com/mnews/20-years-of-arya-allu-arjun-goes-nostalgic.html",
       "urlToImage": "https://www.123telugu.com/content/wp-content/themes/123telugu/images/logo.gif",
-      "publishedAt": "2024-05-06T09:27:00Z",
-      "content": "Legendary actor-filmmaker duo, Kamal Haasan and Mani Ratnam, are braving the insanely high temperatures and are currently filming Thug Life in New Delhi. The duo and the unit shot a crucial scene ins… [+1020 chars]"
+      "publishedAt": "2024-05-07T04:24:00Z",
+      "content": "Today marks the 20th anniversary of Allu Arjun and Sukumar’s blockbuster romantic drama, Arya. Fans of the duo are trending various hashtags, and producer Dil Raju is planning a special event to cele… [+888 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Financial Express"
+        "name": "NDTV News"
       },
-      "author": "The Financial Express",
-      "title": "Apple event 2024: All the updates you can expect at Apple Let Loose iPad event on May 7 - The Financial Express",
+      "author": null,
+      "title": "Supreme Court Hears Arvind Kejriwal's Request For Bail To Campaign - NDTV",
+      "description": "The Supreme Court will deliberate today on whether to grant interim bail to Delhi Chief Minister Arvind Kejriwal, who has been under arrest since March 21.",
+      "url": "https://www.ndtv.com/india-news/arvind-kejriwal-bail-plea-supreme-court-to-consider-interim-bail-for-arvind-kejriwal-today-5606275",
+      "urlToImage": "https://c.ndtvimg.com/2024-04/uvpg58v8_arvind-kejriwal-pti_625x300_03_April_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738",
+      "publishedAt": "2024-05-07T04:07:04Z",
+      "content": "A bench comprising Justices Sanjiv Khanna and Dipankar Datta will begin proceedings.\r\nNew Delhi: The Supreme Court will deliberate today on whether to grant interim bail to Delhi Chief Minister Arvin… [+1770 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "US, UK, most EU nations to boycott Putin inauguration - Al Jazeera English",
+      "description": "Russia’s Vladimir Putin will be sworn in for a fifth term as president in a ceremony at the Kremlin later on Tuesday.",
+      "url": "https://www.aljazeera.com/news/2024/5/7/us-uk-most-eu-nations-to-boycott-putin-inauguration",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/05/2024-05-06T120605Z_10376631_RC2YJ7AP7DGM_RTRMADP_3_RUSSIA-POLITICS-FRANCE-1715050053.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-05-07T03:45:00Z",
+      "content": "The United States and most European Union nations have said they will not send envoys to Tuesdays inauguration of Vladimir Putin as Russian president.\r\nPutin, 71, secured a fifth term in office in a … [+3810 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Indian Express"
+      },
+      "author": "The Indian Express",
+      "title": "Kuldeep Yadav: A millennial kid, who has shed his ego to adapt and excel - The Indian Express",
       "description": null,
-      "url": "https://www.financialexpress.com/life/technology-apple-event-2024-all-the-updates-you-can-expect-at-apple-let-loose-ipad-event-on-may-7-3478656/",
+      "url": "https://indianexpress.com/article/sports/ipl/kuldeep-yadav-a-millennial-kid-who-has-shed-his-ego-to-adapt-and-excel-9312648/",
       "urlToImage": null,
-      "publishedAt": "2024-05-06T09:18:19Z",
+      "publishedAt": "2024-05-07T03:25:21Z",
       "content": null
     },
     {
       "source": {
         "id": null,
-        "name": "Hindustan Times"
+        "name": "Livemint"
       },
-      "author": "Neha Ravi Khandelwal",
-      "title": "Amazon Sale 2024: Hurry, last 2 days remain! Best deals on top TVs, up to 65% off on Sony, LG, MI, Acer and more - Hindustan Times",
-      "description": "Find the best TV for your needs at great prices and deals with the offers you can avail at The Amazon Great Summer Sale 2024.",
-      "url": "https://www.hindustantimes.com/technology/amazon-sale-2024-hurry-last-2-days-remain-best-deals-on-top-tvs-up-to-65-off-on-sony-lg-mi-acer-and-more-101714982306180.html",
-      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/05/06/1600x900/tv_1714982384935_1714982401433.png",
-      "publishedAt": "2024-05-06T09:15:38Z",
-      "content": "Its the perfect time for big discounts on TVs at the Amazon Great Summer Sale 2024. You can save up to 65% on top brands. Imagine enjoying your favourite shows and movies on a new TV without breaking… [+4628 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Hindustan Times"
-      },
-      "author": "Neha Yadav",
-      "title": "10 magnificent images of galaxies captured by NASA's Hubble Space Telescope - Hindustan Times",
-      "description": "10 magnificent images of galaxies captured by NASA's Hubble Space Telescope",
-      "url": "https://www.hindustantimes.com/web-stories/in-focus/10-magnificent-images-of-galaxies-captured-by-nasas-hubble-space-telescope-101714982064322.html",
-      "urlToImage": null,
-      "publishedAt": "2024-05-06T09:00:14Z",
-      "content": "By Neha YadavPublished May 06, 2024\r\nHindustan TimesIn FocusPhoto Credits: NASA"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Statesman"
-      },
-      "author": "IANS",
-      "title": "New Covid variant ‘FLiRT’ capable of evading the immune system: Experts - The Statesman",
-      "description": "The new Covid-19 variant 'FLiRT', which is spreading fast in the US, is capable of evading the immune system due to a trans substitution of amino acids between two spike proteins, the experts said on Sunday.",
-      "url": "https://www.thestatesman.com/technology/new-covid-variant-flirt-capable-of-evading-the-immune-system-experts-1503297615.html",
-      "urlToImage": "https://www.thestatesman.com/wp-content/uploads/2022/11/India-records-937-new-Covid-cases-9-deaths-in-last-24-hours-1.jpg",
-      "publishedAt": "2024-05-06T08:40:00Z",
-      "content": "The new Covid-19 variant ‘FLiRT’, which is spreading fast in the US, is capable of evading the immune system due to a trans substitution of amino acids between two spike proteins, the experts said on… [+1399 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Free Press Journal"
-      },
-      "author": "Rahul M",
-      "title": "World Asthma Day: Steps To Assist In Emergency Attack - Free Press Journal",
-      "description": "World Asthma Day: Steps To Assist In Emergency Attack",
-      "url": "https://www.freepressjournal.in/ampstories/photo-gallery/world-asthma-day-steps-to-assist-in-emergency-attack",
-      "urlToImage": "https://media.assettype.com/freepressjournal/2024-05/6fec191f-06dd-4e07-acf0-f668082b6792/Your_paragraph_text__11_.png?rect=0%2C0%2C3900%2C2048&w=1200&auto=format%2Ccompress&ogImage=true",
-      "publishedAt": "2024-05-06T08:22:20Z",
-      "content": "This year World Asthma Day is observed on May 7. This day is an opportunity for every individual, health professional, educator and organisations around the world to spread awareness and better healt… [+39 chars]"
-    },
-    {
-      "source": {
-        "id": "espn-cric-info",
-        "name": "ESPN Cric Info"
-      },
-      "author": "ESPNcricinfo staff",
-      "title": "Terror threat to T20 World Cup - ICC assures of 'comprehensive and robust security plan' - ESPNcricinfo",
-      "description": "The ICC and CWI issued a joint statement after the Trinidad & Tobago Prime Minister confirmed that security agencies were monitoring a terror threat to the event",
-      "url": "https://www.espncricinfo.com/story/terror-threat-to-men-s-t20-world-cup-2024-icc-assures-of-comprehensive-and-robust-security-plan-1432563",
-      "urlToImage": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/380400/380455.6.jpg",
-      "publishedAt": "2024-05-06T08:22:04Z",
-      "content": "NewsThe ICC and CWI issued a joint statement after the Trinidad &amp; Tobago Prime Minister confirmed that security agencies were monitoring a terror threat to the event"
-    },
-    {
-      "source": {
-        "id": "the-times-of-india",
-        "name": "The Times of India"
-      },
-      "author": "TOI Sports Desk",
-      "title": "'Come on mate, bat for four overs': Irfan Pathan questions MS Dhoni's batting position in IPL 2024 - The Times of India",
-      "description": "Cricket News: Irfan Pathan is upset at Chennai Super Kings' decision to keep veteran MS Dhoni in a lower batting order position, despite his solid form and team's f",
-      "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/come-on-mate-bat-for-four-overs-irfan-pathan-questions-ms-dhonis-batting-position-in-ipl-2024/articleshow/109879498.cms",
-      "urlToImage": "https://static.toiimg.com/thumb/msid-109879587,width-1070,height-580,imgsize-68324,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
-      "publishedAt": "2024-05-06T08:13:00Z",
-      "content": null
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Zoom"
-      },
-      "author": "Shubham Arora",
-      "title": "iPhone 16 Pro Max Price Could Be Higher Than iPhone 15 Pro Max: New Leaks, Release Date, Specifications And Mo - Times Now",
-      "description": "New leaks suggest the iPhone 16 Pro Max could see a price hike fueled by upgraded features and rising production costs. Here's everything we know so far.",
-      "url": "https://www.timesnownews.com/technology-science/iphone-16-pro-max-price-could-be-higher-than-iphone-15-pro-max-new-leaks-release-date-specifications-and-more-article-109879211",
-      "urlToImage": "https://static.tnn.in/thumb/msid-109879254,thumbsize-1153957,width-1280,height-720,resizemode-75/109879254.jpg",
-      "publishedAt": "2024-05-06T08:03:25Z",
-      "content": "Google I/O 2024 Expected Announcements Include Pixel 8A, Android 15, AI Updates, and More: All Details Here"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Hindustan Times"
-      },
-      "author": "AFP",
-      "title": "Russia's Vladimir Putin orders nuclear drills amid Ukraine war - Hindustan Times",
-      "description": "\"During the exercise, a set of measures will be taken to practise the preparation and use of non-strategic nuclear weapons,\" the defence ministry said. | World News",
-      "url": "https://www.hindustantimes.com/world-news/russia-vladimir-putin-orders-nuclear-drills-with-troops-near-ukraine-amid-war-101714981598804.html",
-      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/05/06/1600x900/RUSSIA-POLITICS-RELIGION-ORTHODOX-EASTER-11_1714981696506_1714981730169.jpg",
-      "publishedAt": "2024-05-06T07:49:08Z",
-      "content": "President Vladimir Putin has ordered the Russian military to hold nuclear weapons drills involving the navy and troops based near Ukraine, the defence ministry said Monday.\r\nRussia's President Vladim… [+1296 chars]"
+      "author": "Shivangini",
+      "title": "Q4 results today: Dr Reddy's Labs, Voltas, JSW Energy, Pidilite Ind, United Breweries, and others to post earnings today | Mint - Mint",
+      "description": "Q4 FY2024 Results: Around 42 companies, including Dr Reddy's Laboratories, Voltas, JSW Energy, Pidilite Industries, United Breweries, IDFC, Hindustan Media Ventures, and PB Fintech, are scheduled to post their earnings on May 7.",
+      "url": "https://www.livemint.com/companies/company-results/q4-results-today-dr-reddys-labs-voltas-jsw-energy-pidilite-ind-united-breweries-and-others-to-post-earnings-today-11715047787775.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2024/05/07/1600x900/3-0-97431674-iStock-834792042-0_1679787577110_1715049281388.jpg",
+      "publishedAt": "2024-05-07T03:21:45Z",
+      "content": "Q4 results today: Around 42 companies will announce their financial results for the fourth quarter of FY24, which ended on March 31, 2024, today (May 7). On May 6, the BSE Sensex ended up 17 points a… [+2464 chars]"
     }
   ]
 }

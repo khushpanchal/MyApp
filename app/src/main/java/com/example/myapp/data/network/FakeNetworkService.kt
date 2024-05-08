@@ -7,9 +7,13 @@ import com.google.gson.Gson
 
 class FakeNetworkService(private val context: Context){
 
-    fun getMainData(): News {
-        val jsonString = Utils.readJsonFromAssets(context)
+    fun getMainData(pageNum: Int): News {
+        val jsonString = Utils.readJsonFromAssets(context, pageNum)
         return Gson().fromJson(jsonString, News::class.java)
     }
+//    fun getMainData(): News {
+//        val jsonString = Utils.readJsonFromAssets(context)
+//        return Gson().fromJson(jsonString, News::class.java)
+//    }
 
 }
