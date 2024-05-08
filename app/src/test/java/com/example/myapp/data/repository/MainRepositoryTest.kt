@@ -48,7 +48,7 @@ class MainRepositoryTest {
                 status = "ok", totalResults = 1, articles = mainDataList
             )
 
-            Mockito.doReturn(response).`when`(fakeNetworkService).getMainData()
+            Mockito.doReturn(response).`when`(fakeNetworkService).getMainData(1)
             Mockito.doReturn(
                 flowOf(
                     response.articles
@@ -56,7 +56,7 @@ class MainRepositoryTest {
             )
                 .`when`(database).getAllData()
 
-            val actual = mainRepository.getMainData().first()
+            val actual = mainRepository.getMainData(1)
             assertEquals(response.articles, actual)
 
         }
@@ -72,9 +72,7 @@ class MainRepositoryTest {
 
             assertThrows(RuntimeException::class.java) {
                 runBlocking {
-                    mainRepository.getMainData().collect {
-
-                    }
+                    mainRepository.getMainData(1)
                 }
             }
         }
