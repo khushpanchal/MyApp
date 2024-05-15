@@ -64,3 +64,34 @@ class MainViewModel @Inject constructor(
     }
 
 }
+
+// For search
+//    private val query = MutableStateFlow("")
+
+//    init {
+//        viewModelScope.launch {
+//            query
+//                .debounce(500)
+//                .filter {
+//                    return@filter it.isNotEmpty()
+//                }
+//                .distinctUntilChanged()
+//                .flatMapLatest { searchQuery ->
+//                    _searchItem.emit(UIState.Loading)
+//                    mainRepository.getMainData(searchQuery = searchQuery)
+//                        .catch {
+//                            _searchItem.emit(UIState.Failure(it))
+//                        }
+//                }
+//                .flowOn(dispatcherProvider.io)
+//                .collect {
+//                    _searchItem.emit(UIState.Success(it))
+//                }
+//        }
+//    }
+
+//    fun searchLocation(searchQuery: String) {
+//        viewModelScope.launch {
+//            query.value = searchQuery
+//        }
+//    }
