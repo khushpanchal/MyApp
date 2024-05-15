@@ -13,3 +13,11 @@ class FakeNetworkService(private val context: Context){
     }
 
 }
+
+/**
+ * //Replace Post with your type.
+ *         val gson = Gson()
+ *         val jsonString = Utils.readJsonFromAssets(context)
+ *         val listType: Type = object : TypeToken<List<Post?>?>() {}.type
+ *         val posts: List<Post> = gson.fromJson<List<Post>>(jsonString, listType)
+ */
