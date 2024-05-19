@@ -20,7 +20,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class MainFragment: Fragment() {
+class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
 
@@ -49,6 +49,7 @@ class MainFragment: Fragment() {
     private fun setupUI() {
         adapter.setOnItemClickListener {
             Toast.makeText(this@MainFragment.requireContext(), it.title, Toast.LENGTH_SHORT).show()
+            openExtraFragmentFromMainFragment()
         }
         binding.rv.adapter = adapter
         binding.rv.layoutManager =
@@ -142,25 +143,30 @@ class MainFragment: Fragment() {
         parentFragmentManager
             .beginTransaction()
             .replace(R.id.container, ExtraFragment.newInstance(), ExtraFragment.TAG)
+            .addToBackStack(ExtraFragment.TAG)
             .commit()
     }
 
-//    private var isLoading = false
-//    private fun manualPagination() {
-//        binding.rv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-//                super.onScrolled(recyclerView, dx, dy)
-//                val total = recyclerView.layoutManager?.itemCount
-//                val firstItemPos = (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstVisibleItemPosition()
-//                val visItems = recyclerView.layoutManager?.childCount
-//                if (total != null && firstItemPos != null && visItems != null) {
-//                    if (visItems + firstItemPos >= total && !isLoading) {
-//                        isLoading = true
-////                        mainViewModel.loadNext() //maintain page count in viewmodel and loadNext, make isLoading false after received
-//                    }
-//                }
-//            }
-//        })
-//    }
+    //Manual Pagination
+    /*
+    private var isLoading = false
+    private fun manualPagination() {
+        binding.rv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                val total = recyclerView.layoutManager?.itemCount
+                val firstItemPos = (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstVisibleItemPosition()
+                val visItems = recyclerView.layoutManager?.childCount
+                if (total != null && firstItemPos != null && visItems != null) {
+                    if (visItems + firstItemPos >= total && !isLoading) {
+                        isLoading = true
+                        mainViewModel.loadNext() //maintain page count in viewmodel and loadNext, make isLoading false after received
+                    }
+                }
+            }
+        })
+    }
+
+     */
 
 }

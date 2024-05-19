@@ -24,7 +24,7 @@ data class News(
         unique = true
     )]
 )
-data class MainData (
+data class MainData(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
 
@@ -33,4 +33,4 @@ data class MainData (
 
     @SerializedName("urlToImage")
     val urlToImage: String?
-): Serializable
+) : Serializable

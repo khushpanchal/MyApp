@@ -7,8 +7,8 @@ import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.myapp.common.dispatcher.DispatcherProvider
 import com.example.myapp.common.networkhelper.NetworkHelper
-import com.example.myapp.data.repository.MainRepository
 import com.example.myapp.data.model.MainData
+import com.example.myapp.data.repository.MainRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -21,7 +21,7 @@ class MainViewModel @Inject constructor(
     private val dispatcherProvider: DispatcherProvider,
     private val networkHelper: NetworkHelper,
     private val pager: Pager<Int, MainData>,
-): ViewModel() {
+) : ViewModel() {
 
     private val _mainItem = MutableStateFlow<PagingData<MainData>>(PagingData.empty())
     val mainItem: StateFlow<PagingData<MainData>> = _mainItem
@@ -65,33 +65,36 @@ class MainViewModel @Inject constructor(
 
 }
 
-// For search
-//    private val query = MutableStateFlow("")
+//For search
 
-//    init {
-//        viewModelScope.launch {
-//            query
-//                .debounce(500)
-//                .filter {
-//                    return@filter it.isNotEmpty()
-//                }
-//                .distinctUntilChanged()
-//                .flatMapLatest { searchQuery ->
-//                    _searchItem.emit(UIState.Loading)
-//                    mainRepository.getMainData(searchQuery = searchQuery)
-//                        .catch {
-//                            _searchItem.emit(UIState.Failure(it))
-//                        }
-//                }
-//                .flowOn(dispatcherProvider.io)
-//                .collect {
-//                    _searchItem.emit(UIState.Success(it))
-//                }
-//        }
-//    }
+/*
+    private val query = MutableStateFlow("")
 
-//    fun searchLocation(searchQuery: String) {
-//        viewModelScope.launch {
-//            query.value = searchQuery
-//        }
-//    }
+    init {
+        viewModelScope.launch {
+            query
+                .debounce(500)
+                .filter {
+                    return@filter it.isNotEmpty()
+                }
+                .distinctUntilChanged()
+                .flatMapLatest { searchQuery ->
+                    _searchItem.emit(UIState.Loading)
+                    mainRepository.getMainData(searchQuery = searchQuery)
+                        .catch {
+                            _searchItem.emit(UIState.Failure(it))
+                        }
+                }
+                .flowOn(dispatcherProvider.io)
+                .collect {
+                    _searchItem.emit(UIState.Success(it))
+                }
+        }
+    }
+
+    fun searchLocation(searchQuery: String) {
+        viewModelScope.launch {
+            query.value = searchQuery
+        }
+    }
+*/

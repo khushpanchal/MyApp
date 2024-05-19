@@ -9,7 +9,8 @@ import com.bumptech.glide.Glide
 import com.example.myapp.data.model.MainData
 import com.example.myapp.databinding.ItemMainBinding
 
-class MainPagerAdapter: PagingDataAdapter<MainData, MainPagerAdapter.MainViewHolder>(MainDiffCallback) {
+class MainPagerAdapter :
+    PagingDataAdapter<MainData, MainPagerAdapter.MainViewHolder>(MainDiffCallback) {
 
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         holder.bind(getItem(position)!!)
@@ -21,7 +22,7 @@ class MainPagerAdapter: PagingDataAdapter<MainData, MainPagerAdapter.MainViewHol
         )
     }
 
-    inner class MainViewHolder(private val binding: ItemMainBinding): ViewHolder(binding.root) {
+    inner class MainViewHolder(private val binding: ItemMainBinding) : ViewHolder(binding.root) {
         fun bind(mainData: MainData) {
             binding.tvItem.text = mainData.title
             itemView.setOnClickListener {
@@ -34,13 +35,13 @@ class MainPagerAdapter: PagingDataAdapter<MainData, MainPagerAdapter.MainViewHol
         }
     }
 
-    private var itemClickListener: ((MainData)->Unit)? = null
+    private var itemClickListener: ((MainData) -> Unit)? = null
 
-    fun setOnItemClickListener(listener: (MainData)->Unit) {
+    fun setOnItemClickListener(listener: (MainData) -> Unit) {
         itemClickListener = listener
     }
 
-    object MainDiffCallback: DiffUtil.ItemCallback<MainData>() {
+    object MainDiffCallback : DiffUtil.ItemCallback<MainData>() {
         override fun areItemsTheSame(oldItem: MainData, newItem: MainData): Boolean {
             return oldItem.title == newItem.title
         }

@@ -3,14 +3,13 @@ package com.example.myapp.data.repository
 import com.example.myapp.data.database.DatabaseService
 import com.example.myapp.data.model.MainData
 import com.example.myapp.data.network.FakeNetworkService
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class MainRepository @Inject constructor(
-    private val fakeNetworkService: FakeNetworkService,
+    private val fakeNetworkService: FakeNetworkService, // private val apiInterface: ApiInterface,
     private val databaseService: DatabaseService
 ) {
 
