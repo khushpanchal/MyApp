@@ -92,7 +92,7 @@ class MainViewModel @Inject constructor(
         }
     }
 
-    fun searchLocation(searchQuery: String) {
+    fun search(searchQuery: String) {
         viewModelScope.launch {
             query.value = searchQuery
         }

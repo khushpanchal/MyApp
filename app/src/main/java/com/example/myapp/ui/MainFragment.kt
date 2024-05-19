@@ -147,6 +147,18 @@ class MainFragment : Fragment() {
             .commit()
     }
 
+    /* //For Search Functionality
+    private fun searchUI() {
+        //Create EditText field in XML and then:
+        binding.etSearch.doAfterTextChanged {
+            if(!it.isNullOrEmpty()) {
+                mainViewModel.search(it.toString())
+            }
+        }
+    }
+
+    */
+
     //Manual Pagination
     /*
     private var isLoading = false
