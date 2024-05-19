@@ -98,3 +98,44 @@ class MainViewModel @Inject constructor(
         }
     }
 */
+
+//For Paginated search: Do not inject Pager from constructor, rather create new PagingSource for each search query
+
+/*
+    private val query = MutableStateFlow("")
+
+    init {
+        viewModelScope.launch {
+            query
+                .debounce(500)
+                .filter {
+                    return@filter it.isNotEmpty()
+                }
+                .distinctUntilChanged()
+                .flatMapLatest { searchQuery ->
+                    val pager: Pager<Int, MainData> = Pager(
+                        config = PagingConfig(
+                            pageSize = 10
+                        )
+                    ) {
+                        MainPagingSource(
+                            searchQuery,
+                            mainRepository,
+                            networkHelper,
+                            dispatcherProvider
+                        )
+                    }
+                    pager.flow
+                }
+                .cachedIn(viewModelScope).collect {
+                    _mainItem.emit(it)
+                }
+        }
+    }
+
+    fun search(searchQuery: String) {
+        viewModelScope.launch {
+            query.value = searchQuery
+        }
+    }
+*/
