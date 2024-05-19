@@ -9,7 +9,7 @@ import com.example.myapp.databinding.FragmentExtraBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint //Required for field injection
-class ExtraFragment: Fragment() {
+class ExtraFragment : Fragment() {
 
     lateinit var binding: FragmentExtraBinding
 

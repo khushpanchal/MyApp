@@ -35,7 +35,7 @@ class ApplicationModule {
 
     @BaseUrl
     @Provides
-    fun provideBaseUrl(): String = "http://localhost/"
+    fun provideBaseUrl(): String = "http://localhost/" //Pass this if no other base url is required.
 
     @Singleton
     @Provides

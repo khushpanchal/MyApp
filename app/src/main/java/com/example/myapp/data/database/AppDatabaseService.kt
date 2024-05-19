@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 class AppDatabaseService(
     private val mainDatabase: MainDatabase
-): DatabaseService {
+) : DatabaseService {
     override fun getAllData(): Flow<List<MainData>> {
         return mainDatabase.getMainDao().getAllData()
     }

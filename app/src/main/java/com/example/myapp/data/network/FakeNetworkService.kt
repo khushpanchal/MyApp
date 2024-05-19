@@ -5,7 +5,7 @@ import com.example.myapp.common.Utils
 import com.example.myapp.data.model.News
 import com.google.gson.Gson
 
-class FakeNetworkService(private val context: Context){
+class FakeNetworkService(private val context: Context) {
 
     fun getMainData(): News {
         val jsonString = Utils.readJsonFromAssets(context)

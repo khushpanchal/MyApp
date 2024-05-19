@@ -11,7 +11,7 @@ import javax.inject.Singleton
 
 @Singleton
 class MainRepository @Inject constructor(
-    private val fakeNetworkService: FakeNetworkService,
+    private val fakeNetworkService: FakeNetworkService, // private val apiInterface: ApiInterface,
     private val databaseService: DatabaseService
 ) {
 
@@ -33,7 +33,7 @@ class MainRepository @Inject constructor(
         }
     }
 
-    suspend fun getDataFromDb(): Flow<List<MainData> > {
+    suspend fun getDataFromDb(): Flow<List<MainData>> {
         return flow {
             emit(
                 databaseService.getAllData().first() //List<MainData>

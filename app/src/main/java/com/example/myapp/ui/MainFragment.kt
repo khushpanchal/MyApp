@@ -12,7 +12,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.myapp.R
 import com.example.myapp.common.UIState
 import com.example.myapp.databinding.FragmentMainBinding
@@ -21,7 +20,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class MainFragment: Fragment() {
+class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
 
@@ -50,9 +49,11 @@ class MainFragment: Fragment() {
     private fun setupUI() {
         adapter.setOnItemClickListener {
             Toast.makeText(this@MainFragment.requireContext(), it.title, Toast.LENGTH_SHORT).show()
+            openExtraFragmentFromMainFragment()
         }
         binding.rv.adapter = adapter
-        binding.rv.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
+        binding.rv.layoutManager =
+            LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
         binding.rv.addItemDecoration(
             DividerItemDecoration(
                 this.context,
@@ -65,7 +66,7 @@ class MainFragment: Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 mainViewModel.mainItem.collect {
-                    when(it) {
+                    when (it) {
                         is UIState.Success -> {
                             binding.progress.visibility = View.GONE
                             binding.error.visibility = View.GONE
@@ -107,9 +108,12 @@ class MainFragment: Fragment() {
         parentFragmentManager
             .beginTransaction()
             .replace(R.id.container, ExtraFragment.newInstance(), ExtraFragment.TAG)
+            .addToBackStack(ExtraFragment.TAG)
             .commit()
     }
 
+    //Manual Pagination
+    /*
     private var isLoading = false
     private fun manualPagination() {
         binding.rv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
@@ -121,11 +125,13 @@ class MainFragment: Fragment() {
                 if (total != null && firstItemPos != null && visItems != null) {
                     if (visItems + firstItemPos >= total && !isLoading) {
                         isLoading = true
-//                        mainViewModel.loadNext() //maintain page count in viewmodel and loadNext, make isLoading false after received
+                        mainViewModel.loadNext() //maintain page count in viewmodel and loadNext, make isLoading false after received
                     }
                 }
             }
         })
     }
+
+     */
 
 }

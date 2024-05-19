@@ -5,8 +5,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.myapp.common.UIState
 import com.example.myapp.common.dispatcher.DispatcherProvider
 import com.example.myapp.common.networkhelper.NetworkHelper
-import com.example.myapp.data.repository.MainRepository
 import com.example.myapp.data.model.MainData
+import com.example.myapp.data.repository.MainRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +20,7 @@ class MainViewModel @Inject constructor(
     private val mainRepository: MainRepository,
     private val dispatcherProvider: DispatcherProvider,
     private val networkHelper: NetworkHelper
-): ViewModel() {
+) : ViewModel() {
 
     private val _mainItem = MutableStateFlow<UIState<List<MainData>>>(UIState.Empty)
     val mainItem: StateFlow<UIState<List<MainData>>> = _mainItem
@@ -32,7 +32,7 @@ class MainViewModel @Inject constructor(
     private fun fetchItems() {
         viewModelScope.launch {
             _mainItem.emit(UIState.Loading)
-            if(!networkHelper.isNetworkConnected()) {
+            if (!networkHelper.isNetworkConnected()) {
                 mainRepository
                     .getDataFromDb()
                     .flowOn(dispatcherProvider.io)
@@ -59,33 +59,36 @@ class MainViewModel @Inject constructor(
 
 }
 
-// For search
-//    private val query = MutableStateFlow("")
+//For search
 
-//    init {
-//        viewModelScope.launch {
-//            query
-//                .debounce(500)
-//                .filter {
-//                    return@filter it.isNotEmpty()
-//                }
-//                .distinctUntilChanged()
-//                .flatMapLatest { searchQuery ->
-//                    _searchItem.emit(UIState.Loading)
-//                    mainRepository.getMainData(searchQuery = searchQuery)
-//                        .catch {
-//                            _searchItem.emit(UIState.Failure(it))
-//                        }
-//                }
-//                .flowOn(dispatcherProvider.io)
-//                .collect {
-//                    _searchItem.emit(UIState.Success(it))
-//                }
-//        }
-//    }
+/*
+    private val query = MutableStateFlow("")
 
-//    fun searchLocation(searchQuery: String) {
-//        viewModelScope.launch {
-//            query.value = searchQuery
-//        }
-//    }
+    init {
+        viewModelScope.launch {
+            query
+                .debounce(500)
+                .filter {
+                    return@filter it.isNotEmpty()
+                }
+                .distinctUntilChanged()
+                .flatMapLatest { searchQuery ->
+                    _searchItem.emit(UIState.Loading)
+                    mainRepository.getMainData(searchQuery = searchQuery)
+                        .catch {
+                            _searchItem.emit(UIState.Failure(it))
+                        }
+                }
+                .flowOn(dispatcherProvider.io)
+                .collect {
+                    _searchItem.emit(UIState.Success(it))
+                }
+        }
+    }
+
+    fun searchLocation(searchQuery: String) {
+        viewModelScope.launch {
+            query.value = searchQuery
+        }
+    }
+*/

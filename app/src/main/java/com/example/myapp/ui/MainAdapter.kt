@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.myapp.data.model.MainData
 import com.example.myapp.databinding.ItemMainBinding
 
-class MainAdapter(): RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
+class MainAdapter : RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
 
     private val items = ArrayList<MainData>()
 
@@ -38,7 +38,7 @@ class MainAdapter(): RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
         holder.bind(items[position])
     }
 
-    inner class MainViewHolder(private val binding: ItemMainBinding): ViewHolder(binding.root) {
+    inner class MainViewHolder(private val binding: ItemMainBinding) : ViewHolder(binding.root) {
 
         fun bind(mainData: MainData) {
             binding.tvItem.text = mainData.title
@@ -53,9 +53,9 @@ class MainAdapter(): RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
 
     }
 
-    private var itemClickListener: ((MainData)->Unit)? = null
+    private var itemClickListener: ((MainData) -> Unit)? = null
 
-    fun setOnItemClickListener(listener: (MainData)->Unit) {
+    fun setOnItemClickListener(listener: (MainData) -> Unit) {
         itemClickListener = listener
     }
 }
