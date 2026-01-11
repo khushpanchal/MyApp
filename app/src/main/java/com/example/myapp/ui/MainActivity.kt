@@ -1,31 +1,32 @@
 package com.example.myapp.ui
 
 import android.os.Bundle
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapp.R
+import androidx.compose.material3.MaterialTheme
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        if (savedInstanceState == null) {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance(), MainFragment.TAG)
-                .commit()
+        setContent {
+            MaterialTheme {
+                val navController = rememberNavController()
+                NavHost(navController = navController, startDestination = "main") {
+                    composable("main") {
+                        MainScreen(onItemClick = {
+                            navController.navigate("extra")
+                        })
+                    }
+                    composable("extra") {
+                        ExtraScreen()
+                    }
+                }
+            }
         }
-
-    }
-
-    private fun openExtraFragmentFromMainActivity() {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.container, ExtraFragment.newInstance(), ExtraFragment.TAG)
-            .commit()
     }
 }
-
-

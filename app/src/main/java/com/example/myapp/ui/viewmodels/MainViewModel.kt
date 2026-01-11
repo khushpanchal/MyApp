@@ -31,16 +31,16 @@ class MainViewModel @Inject constructor(
 
     private fun fetchItems() {
         viewModelScope.launch {
-            _mainItem.emit(UIState.Loading)
+            _mainItem.value = UIState.Loading
             if (!networkHelper.isNetworkConnected()) {
                 mainRepository
                     .getDataFromDb()
                     .flowOn(dispatcherProvider.io)
                     .catch {
-                        _mainItem.emit(UIState.Failure(it))
+                        _mainItem.value = UIState.Failure(it)
                     }
                     .collect {
-                        _mainItem.emit(UIState.Success(it))
+                        _mainItem.value = UIState.Success(it)
                     }
                 return@launch
             }
@@ -49,10 +49,10 @@ class MainViewModel @Inject constructor(
                 .getMainData()
                 .flowOn(dispatcherProvider.io)
                 .catch {
-                    _mainItem.emit(UIState.Failure(it))
+                    _mainItem.value = UIState.Failure(it)
                 }
                 .collect {
-                    _mainItem.emit(UIState.Success(it))
+                    _mainItem.value = UIState.Success(it)
                 }
         }
     }
@@ -73,15 +73,15 @@ class MainViewModel @Inject constructor(
                 }
                 .distinctUntilChanged()
                 .flatMapLatest { searchQuery ->
-                    _searchItem.emit(UIState.Loading)
+                    _searchItem.value = UIState.Loading
                     mainRepository.getMainData(searchQuery = searchQuery)
                         .catch {
-                            _searchItem.emit(UIState.Failure(it))
+                            _searchItem.value = UIState.Failure(it)
                         }
                 }
                 .flowOn(dispatcherProvider.io)
                 .collect {
-                    _searchItem.emit(UIState.Success(it))
+                    _searchItem.value = UIState.Success(it)
                 }
         }
     }
