@@ -19,16 +19,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.ColorPainter
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.example.myapp.common.UIState
 import com.example.myapp.data.model.MainData
 import com.example.myapp.ui.viewmodels.MainViewModel
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun MainScreen(
-    mainViewModel: MainViewModel = hiltViewModel(),
+    mainViewModel: MainViewModel = koinViewModel(),
     onItemClick: (MainData) -> Unit
 ) {
     val state by mainViewModel.mainItem.collectAsStateWithLifecycle()

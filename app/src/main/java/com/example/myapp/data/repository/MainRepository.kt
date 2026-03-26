@@ -6,11 +6,8 @@ import com.example.myapp.data.network.FakeNetworkService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class MainRepository @Inject constructor(
+class MainRepository(
     private val fakeNetworkService: FakeNetworkService, // private val apiInterface: ApiInterface,
     private val databaseService: DatabaseService
 ) {
