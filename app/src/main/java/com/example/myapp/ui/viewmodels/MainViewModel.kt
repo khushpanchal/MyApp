@@ -7,16 +7,13 @@ import com.example.myapp.common.dispatcher.DispatcherProvider
 import com.example.myapp.common.networkhelper.NetworkHelper
 import com.example.myapp.data.model.MainData
 import com.example.myapp.data.repository.MainRepository
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class MainViewModel @Inject constructor(
+class MainViewModel(
     private val mainRepository: MainRepository,
     private val dispatcherProvider: DispatcherProvider,
     private val networkHelper: NetworkHelper

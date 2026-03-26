@@ -1,7 +1,5 @@
 package com.example.myapp.di
 
-import android.app.Application
-import android.content.Context
 import androidx.room.Room
 import com.example.myapp.common.dispatcher.DefaultDispatcherProvider
 import com.example.myapp.common.dispatcher.DispatcherProvider
@@ -15,98 +13,56 @@ import com.example.myapp.data.database.MainDatabase
 import com.example.myapp.data.network.ApiInterface
 import com.example.myapp.data.network.ApiKeyInterceptor
 import com.example.myapp.data.network.FakeNetworkService
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.components.SingletonComponent
+import com.example.myapp.data.repository.MainRepository
+import com.example.myapp.ui.viewmodels.MainViewModel
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Singleton
+import org.koin.android.ext.koin.androidContext
+import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.core.qualifier.named
+import org.koin.dsl.module
 
-@Module
-@InstallIn(SingletonComponent::class)
-class ApplicationModule {
+private const val API_KEY = "ApiKey"
+private const val BASE_URL = "BaseUrl"
+private const val DB_NAME = "DbName"
 
-    @ApiKey
-    @Provides
-    fun provideApiKey(): String = "api key"
+val appModule = module {
+    single(named(API_KEY)) { "api key" }
+    single(named(BASE_URL)) { "http://localhost/" } // Pass this if no other base url is required.
+    single(named(DB_NAME)) { "article_db" }
 
-    @BaseUrl
-    @Provides
-    fun provideBaseUrl(): String = "http://localhost/" //Pass this if no other base url is required.
+    single { GsonConverterFactory.create() }
+    single { ApiKeyInterceptor(get(named(API_KEY))) }
 
-    @Singleton
-    @Provides
-    fun provideGsonConverterFactory(): GsonConverterFactory = GsonConverterFactory.create()
-
-    @Singleton
-    @Provides
-    fun provideNetworkService(
-        @BaseUrl baseUrl: String,
-        gsonFactory: GsonConverterFactory,
-        apiKeyInterceptor: ApiKeyInterceptor //if required
-    ): ApiInterface {
+    single<ApiInterface> {
         val client = OkHttpClient
             .Builder()
-            .addInterceptor(apiKeyInterceptor) //add if required
+            .addInterceptor(get<ApiKeyInterceptor>())
             .build()
 
-        return Retrofit
+        Retrofit
             .Builder()
-            .client(client) //adding client to intercept all responses
-            .baseUrl(baseUrl)
-            .addConverterFactory(gsonFactory)
+            .client(client) // Adding client to intercept all responses.
+            .baseUrl(get<String>(named(BASE_URL)))
+            .addConverterFactory(get())
             .build()
             .create(ApiInterface::class.java)
     }
 
-    @Singleton
-    @Provides
-    fun provideFakeNetworkService(@ApplicationContext appContext: Context): FakeNetworkService {
-        return FakeNetworkService(appContext)
-    }
-
-    @Provides
-    @Singleton
-    fun provideDispatcher(): DispatcherProvider = DefaultDispatcherProvider()
-
-
-    @Provides
-    @Singleton
-    fun provideNetworkHelper(
-        @ApplicationContext context: Context
-    ): NetworkHelper {
-        return NetworkHelperImpl(context)
-    }
-
-    @Provides
-    @Singleton
-    fun provideLogger(): Logger {
-        return AppLogger()
-    }
-
-    @DbName
-    @Provides
-    fun provideDbName(): String = "article_db"
-
-    @Singleton
-    @Provides
-    fun provideArticleDatabase(
-        application: Application,
-        @DbName dbName: String
-    ): MainDatabase {
-        return Room.databaseBuilder(
-            application,
+    single { FakeNetworkService(androidContext()) }
+    single<DispatcherProvider> { DefaultDispatcherProvider() }
+    single<NetworkHelper> { NetworkHelperImpl(androidContext()) }
+    single<Logger> { AppLogger() }
+    single {
+        Room.databaseBuilder(
+            androidContext(),
             MainDatabase::class.java,
-            dbName
+            get<String>(named(DB_NAME))
         ).build()
     }
+    single<DatabaseService> { AppDatabaseService(get()) }
+    single { MainRepository(get(), get()) }
 
-    @Provides
-    @Singleton
-    fun provideDatabaseService(mainDatabase: MainDatabase): DatabaseService {
-        return AppDatabaseService(mainDatabase)
-    }
+    viewModel { MainViewModel(get(), get(), get()) }
 }
